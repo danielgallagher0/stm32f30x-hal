@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [v0.2.1] - 2018-06-05
+
+- Enable applications to access pins that default as JTAG pins
+
 ## [v0.2.0] - 2018-05-12
 
 - This crate now compiles on the stable and beta channels.
@@ -15,8 +19,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - [breaking-change] this crate now requires `arm-none-eabi-gcc` to be installed and available in
   `$PATH` to compile.
-
-## [v0.1.2] - 2018-02-09
 
 ### Fixed
 
