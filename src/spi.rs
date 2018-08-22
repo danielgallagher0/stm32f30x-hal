@@ -7,7 +7,7 @@ use nb;
 use stm32f30x::{SPI1, SPI2, SPI3};
 
 use gpio::gpioa::{PA5, PA6, PA7};
-use gpio::gpiob::{PB13, PB14, PB15, PB5};
+use gpio::gpiob::{PB13, PB14, PB15, PB3, PB5};
 use gpio::gpioc::{PC10, PC11, PC12};
 use gpio::{AF5, AF6};
 use rcc::{APB1, APB2, Clocks};
@@ -37,7 +37,7 @@ pub unsafe trait MisoPin<SPI> {}
 pub unsafe trait MosiPin<SPI> {}
 
 unsafe impl SckPin<SPI1> for PA5<AF5> {}
-// unsafe impl SckPin<SPI1> for PB3<AF5> {}
+unsafe impl SckPin<SPI1> for PB3<AF5> {}
 
 unsafe impl SckPin<SPI2> for PB13<AF5> {}
 
